@@ -1,0 +1,1 @@
+export { LikeComponent } from "./Like";

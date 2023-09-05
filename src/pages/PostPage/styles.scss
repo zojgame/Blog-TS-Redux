@@ -1,0 +1,38 @@
+.post_page{
+    margin: 0 70px;
+    nav{
+        padding: 24px 16px;            
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        .interactive{
+            display: flex;
+            gap: 24px;        
+            user-select: none;                
+        }
+
+        .go_back_btn{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            gap: 9px;
+        }
+    }
+
+    .content{
+        margin-bottom: 64px;
+        h1{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            margin: 0 auto;
+            width: 848px;
+            display: block;
+            img{
+                margin: 48px 0;
+            }
+        }
+    }
+}  
