@@ -19,8 +19,7 @@ type Posts = Post[]
 type ConvertedPosts = ConvertedPost[]
 
 type InitialState = {
-    posts: ConvertedPosts,
-    currentPost: ConvertedPost
+    posts: ConvertedPosts
 }
 
 type State = ReturnType<typeof store.getState>

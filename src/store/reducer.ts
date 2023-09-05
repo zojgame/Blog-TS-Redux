@@ -1,20 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { InitialState, ConvertedPost } from "../types";
-
-const initialCurrentPost : ConvertedPost = {
-    userId: -1,
-    id: -1,
-    title: "",
-    body: "",
-    isDisliked: false,
-    isLiked: false,
-    likes: 0,
-    dislikes: 0
-}
+import { InitialState } from "../types";
 
 const initialState : InitialState = {
-    posts: [],
-    currentPost: initialCurrentPost
+    posts: []
 }
 
 const postsReducer = createSlice({
@@ -23,12 +11,9 @@ const postsReducer = createSlice({
     reducers: {
         setPosts: (state, action) => {
             state.posts = action.payload
-        },
-        setCurrentPost: (state, action) => {
-            state.currentPost = action.payload
         }
     }
 })
 
-export const { setPosts, setCurrentPost } = postsReducer.actions
+export const { setPosts } = postsReducer.actions
 export { postsReducer } 
