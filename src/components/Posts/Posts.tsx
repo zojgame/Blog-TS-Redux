@@ -33,7 +33,7 @@ const PostsComponent = () => {
             <div className="posts">
                 {posts.slice(1, 5).map((post) => {
                     return(
-                        <div className="post">
+                        <div className="post" key={post.id}>
                             <img src="https://placehold.co/558x273" alt="изображение" />
                                 <h2>{post?.title}</h2>
                             <div className="activities">
